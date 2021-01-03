@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require_relative '../../services/site_log_comparator'
+require_relative '../../services/site_log_parser'
 
-describe Services::SiteLogComparator do
+describe Services::SiteLogParser do
   subject(:service) { described_class.new }
 
   it '1 is equal 1' do
