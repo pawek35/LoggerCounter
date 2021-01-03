@@ -5,8 +5,6 @@ module Services
   class SiteLogParser
     def initialize; end
 
-    def call(number)
-      number == 1
-    end
+    def call(_file_path); end
   end
 end
