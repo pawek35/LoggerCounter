@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Models
-  # Class which represents website site path
+  # Class which represents site
   class Site
     attr_reader :visit_count, :uniq_visit_count
 
