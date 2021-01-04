@@ -51,13 +51,13 @@ describe Models::Site do
         model.visit('000.000.000.001')
         model.visit('000.000.000.002')
 
-        expect(model.visit_print).to eq('/about 2 unique views')
+        expect(model.uniq_visit_print).to eq('/about 2 unique views')
       end
     end
 
     context 'when noone visited' do
       it 'returns string with informations' do
-        expect(model.visit_print).to eq('/about 0 unique views')
+        expect(model.uniq_visit_print).to eq('/about 0 unique views')
       end
     end
   end
